@@ -73,3 +73,7 @@ Struggled with this one almost to a point where I'd just peek at other solutions
 ## Day 13
 
 Both parts were really nice ones. I overly optimized, as was almost sure that the second part would be something huge. Well. It was not.
+
+## Day 14
+
+Part one was deceptively easy. Second one was simply a matter of detecting offset, cycles and then calculating the remaining cycles to take.
