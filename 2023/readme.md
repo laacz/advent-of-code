@@ -77,3 +77,7 @@ Both parts were really nice ones. I overly optimized, as was almost sure that th
 ## Day 14
 
 Part one was deceptively easy. Second one was simply a matter of detecting offset, cycles and then calculating the remaining cycles to take.
+
+## Day 15
+
+Bruted my way out of this.
