@@ -80,4 +80,10 @@ Part one was deceptively easy. Second one was simply a matter of detecting offse
 
 ## Day 15
 
+Part one was chill, par two was an unneccessary twist. What bothered me, that solution works not 100% of the time. Oh, well.
+
+## Day 16
+
 Bruted my way out of this.
+
+
