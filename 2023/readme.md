@@ -86,4 +86,10 @@ Part one was chill, par two was an unneccessary twist. What bothered me, that so
 
 Bruted my way out of this.
 
+## Day 17
 
+**work in progress**
+
+## Day 18
+
+First tried to compute area with a ray method. Didn't want the hassle with the edge cases, when ray occupies the same space as the edge. Thought about flood-fill, but a quick google search showed me Shoelace's algorithm for computing area of a polygon. After that - quick and easy.
