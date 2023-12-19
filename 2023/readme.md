@@ -93,3 +93,7 @@ Bruted my way out of this.
 ## Day 18
 
 First tried to compute area with a ray method. Didn't want the hassle with the edge cases, when ray occupies the same space as the edge. Thought about flood-fill, but a quick google search showed me Shoelace's algorithm for computing area of a polygon. After that - quick and easy.
+
+## Day 19
+
+Part one was a nightmare to parse, but easy to solve. Par two was some recursive range splitting fu I was not ready for. Fighted copy by reference vs copy by value for a while.
