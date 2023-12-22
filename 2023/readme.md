@@ -88,7 +88,7 @@ Bruted my way out of this.
 
 ## Day 17
 
-**work in progress**
+Fuuuuuuuu... it took so long. I'm writing this entry on day 22. That's how long the first part took. Apparently Dijkstra is my actual nemesis.
 
 ## Day 18
 
