@@ -97,3 +97,28 @@ First tried to compute area with a ray method. Didn't want the hassle with the e
 ## Day 19
 
 Part one was a nightmare to parse, but easy to solve. Par two was some recursive range splitting fu I was not ready for. Fighted copy by reference vs copy by value for a while.
+
+## Day 20
+
+## Day 21
+
+Part one was easy.
+
+Part two was OMG. My solution has nothing to do with the test data.
+
+This would not be possible without looking at the output of the actual input for the part 1. It's actually a diamond shape. Always. 
+
+To validate that this propogates to other four adjoining squares, I tested the first part by modifying input so the starting point is in the middle of any of the four sides, as well as from all four corners.
+
+So it all boiled down to calculating the covered tiles and then the hardest part - partially covered ones.
+
+Each step expands our diamond by one tile in each direction. With the step 66 we overflow into horizontally and vertically adjoining tiles (65 steps to take from the center of the 131x131 tile).
+
+That means that after taking 26501365 steps we've moved 26501365 steps away from the center. It fully covers (steps / 131)^2 tiles. 
+
+Horizontally and vertically we need to take care of at most 2 tiles in each direction. Diagonally it's not that simple. 
+
+However.
+
+I decided to peek at the solutions and found that quadratic formula approach would be much easier. It does not work with test cases for some reason, but the actual input's result was accepted nontheless.
+
