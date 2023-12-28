@@ -58,13 +58,13 @@ With off and on took almost whole day. No actional struggle with the first part 
 
 As for the second part - at first I was baffled and could now think of anything. But, once I plotted it on screen, solution became obvious - find out if the given point is inside the polygon. Winding numbers and that's it.
 
-![Some debugging going on](https://github.com/laacz/aoc-2023/blob/main/day10/debug.png?raw=true)
+![Some debugging going on](https://github.com/laacz/advent-of-code/2023/blob/main/day10/debug.png?raw=true)
 
 ## Day 11
 
 Easy. First part got solved via the straightforward approach of inserting doubled rows and columns. Then rewrote to store only cols and rows with their corresponding expansion factor.
 
-![Some more debugging going on](https://github.com/laacz/aoc-2023/blob/main/day11/debug.png?raw=true)
+![Some more debugging going on](https://github.com/laacz/advent-of-code/2023/blob/main/day11/debug.png?raw=true)
 
 ## Day 12
 
@@ -128,18 +128,18 @@ When all test cases pass, but input does not...
 
 Took another solution, within my input found first sequence of 10 blocks, for which my solution gives wrong output. 
 
-![Debugging via console](https://github.com/laacz/aoc-2023/blob/main/day22/text-only-debug.png?raw=true)
+![Debugging via console](https://github.com/laacz/advent-of-code/2023/blob/main/day22/text-only-debug.png?raw=true)
 
-My spatial extrapolation is not that good, so I went and wrote my first three.js script to visualize blocks ([debug.js](https://github.com/laacz/aoc-2023/blob/main/day22/debug.js)).
+My spatial extrapolation is not that good, so I went and wrote my first three.js script to visualize blocks ([debug.js](https://github.com/laacz/advent-of-code/2023/blob/main/day22/debug.js)).
 
-![Debugging via three.js rendering](https://github.com/laacz/aoc-2023/blob/main/day22/threejs.png?raw=true)
-![Debugging via three.js editor](https://github.com/laacz/aoc-2023/blob/main/day22/threejs-v1.png?raw=true)
+![Debugging via three.js rendering](https://github.com/laacz/advent-of-code/2023/blob/main/day22/threejs.png?raw=true)
+![Debugging via three.js editor](https://github.com/laacz/advent-of-code/2023/blob/main/day22/threejs-v1.png?raw=true)
 
 It immediately became clear that Blocks "F" and "B" are overlapping. Fixed algo, and all got good. 
 
 When came the second part, I refactored everything to accomodate new requirements. Wanted to go recursive way, but finally used original `Drop` function to test if any other blocks would fall, when one has been removed.
 
-Overall this took some time and was not easy at all. Good thing - refactored approach was much faster than the original :)
+Overall this took some time and was not easy at all. Good thing - refactored approach was much faster than theoriginal :)
 
 
 
