@@ -141,7 +141,7 @@ When came the second part, I refactored everything to accomodate new requirement
 
 Overall this took some time and was not easy at all. Good thing - refactored approach was much faster than the original :)
 
-## Day 23
+## Day 24
 
 This year's days after 19th are brutal. Last year it gave me a bit of anxiety already. This year the levels of it are insane.
 
@@ -153,6 +153,6 @@ This was by far the hardest one. Because it involved knowing specific stuff abou
 
 Nevertheless. After much deliberation on paper it started resembling a linear equation system with 4 unknowns in each. Then I peaked at the solutions, got reminded about Gaussian elimination from mentioned 27 years ago. Got the tests to pass.
 
-![Some manual math](https://raw.githubusercontent.com/laacz/advent-of-code/main/2023/day23/paper.jpg?raw=true)
+![Some manual math](https://raw.githubusercontent.com/laacz/advent-of-code/main/2023/day24/paper.jpg?raw=true)
 
 Main input does not. Too low. After an unspecified amount of debuuging the culprit was found - `int(x + y + z)` instead of `math.Round(x + y + z)`. Idiot.
