@@ -156,3 +156,11 @@ Nevertheless. After much deliberation on paper it started resembling a linear eq
 ![Some manual math](https://raw.githubusercontent.com/laacz/advent-of-code/main/2023/day24/paper.jpg?raw=true)
 
 Main input does not. Too low. After an unspecified amount of debuuging the culprit was found - `int(x + y + z)` instead of `math.Round(x + y + z)`. Idiot.
+
+## Day 25
+
+F*** that sh***.
+
+Just generated a [graphviz file](https://github.com/laacz/advent-of-code/tree/main/2023/day25/graph.dot), then an SVG, embeddet it within [HTML file](https://github.com/laacz/advent-of-code/tree/main/2023/day26/graph.html), added some coloring to visually know which wire I'm clicking, amn onclick event handler to output edge metadata to the console, clicked on the three distinct cuttable wires and done. 
+
+`tpn--gxv`, `zcj--rtt` and `hxq--txl`. Then just ignored them when adding to a graph. Then took first cut nodes, and searched for paths to every other node to count node groups.
