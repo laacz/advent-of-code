@@ -100,6 +100,14 @@ Part one was a nightmare to parse, but easy to solve. Par two was some recursive
 
 ## Day 20
 
+Heh. Spent too much time to come up with an algo which finishes upon processing all pulses and coming to an end of the first or second example. Turns out - everything is set up such way that there are no permanent loops. 
+
+After that it was easy but finicky. Missed some pulses, inverted conjunction memory keys, etc. But got there. Oddly, last bug did not affect the passing of the first example's test.
+
+For second part went the brute force way. Did not work. 
+
+Looking at the input, `rx` gets its input from a conjuction module `kh`, which has four inputs - `pv`, `qh`, `xm` and `hz`. All of them have to be HIGH for `rx` to receive LOW. All of them get high pulses on a regular basis, so this is a LCM problem.
+
 ## Day 21
 
 Part one was easy.
@@ -140,6 +148,10 @@ It immediately became clear that Blocks "F" and "B" are overlapping. Fixed algo,
 When came the second part, I refactored everything to accomodate new requirements. Wanted to go recursive way, but finally used original `Drop` function to test if any other blocks would fall, when one has been removed.
 
 Overall this took some time and was not easy at all. Good thing - refactored approach was much faster than the original :)
+
+## Day 23
+
+WIP
 
 ## Day 24
 
