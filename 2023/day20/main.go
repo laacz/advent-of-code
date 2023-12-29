@@ -33,10 +33,10 @@ func parse(input string) (ret Modules) {
 			outputs := strings.Split(outputs, ", ")
 
 			ret = append(ret, &Module{
-				Type:             TypeConjuction,
-				Outputs:          outputs,
-				Name:             name[1:],
-				ConjuctionMemory: make(map[string]Pulse),
+				Type:              TypeConjunction,
+				Outputs:           outputs,
+				Name:              name[1:],
+				ConjunctionMemory: make(map[string]Pulse),
 			})
 		}
 	}
@@ -44,8 +44,8 @@ func parse(input string) (ret Modules) {
 	for _, module := range ret {
 		for _, output := range module.Outputs {
 			m := ret.Find(output)
-			if m != nil && m.Type == TypeConjuction {
-				m.ConjuctionMemory[module.Name] = LOW
+			if m != nil && m.Type == TypeConjunction {
+				m.ConjunctionMemory[module.Name] = LOW
 			}
 		}
 	}
@@ -56,7 +56,7 @@ func parse(input string) (ret Modules) {
 const (
 	TypeBroadcaster = iota
 	TypeFlipFlop
-	TypeConjuction
+	TypeConjunction
 )
 
 const LOW Pulse = true
@@ -78,20 +78,11 @@ type Entry struct {
 }
 
 type Module struct {
-	Type             int
-	Outputs          []string
-	Name             string
-	FlipFlopState    bool
-	ConjuctionMemory map[string]Pulse
-}
-
-func (m *Module) String() string {
-	t := map[int]string{
-		TypeBroadcaster: "br",
-		TypeFlipFlop:    "fl",
-		TypeConjuction:  "con",
-	}
-	return fmt.Sprintf("[%3s] %s", t[m.Type], m.Name)
+	Type              int
+	Outputs           []string
+	Name              string
+	FlipFlopState     bool
+	ConjunctionMemory map[string]Pulse
 }
 
 type Modules []*Module
@@ -110,7 +101,12 @@ type QQ struct {
 	Pulse Pulse
 }
 
-var hz, pv, qh, xm int
+var watch = map[string]int{
+	"hz": 0,
+	"pv": 0,
+	"qh": 0,
+	"xm": 0,
+}
 
 func (m *Modules) PushButton(i int) (high, low int) {
 	broadcaster := m.Find("broadcaster")
@@ -146,40 +142,24 @@ func (m *Modules) PushButton(i int) (high, low int) {
 					qq = append(qq, QQ{output, out})
 				}
 			}
-		case TypeConjuction:
-			p.Target.ConjuctionMemory[p.Source.Name] = p.Pulse
+		case TypeConjunction:
+			p.Target.ConjunctionMemory[p.Source.Name] = p.Pulse
 
 			if p.Target.Name == "kh" && p.Pulse == HIGH {
-				fmt.Printf("Processing pulse: %+v\n", p)
-				fmt.Println("  kh memory: ", p.Target.ConjuctionMemory)
-				if hz == 0 && p.Target.ConjuctionMemory["hz"] == HIGH {
-					hz = i
-					fmt.Println("hz", i)
+				for k, v := range p.Target.ConjunctionMemory {
+					if v == HIGH && watch[k] == 0 {
+						watch[k] = i
+					}
 				}
-				if pv == 0 && p.Target.ConjuctionMemory["pv"] == HIGH {
-					pv = i
-					fmt.Println("pv", i)
-				}
-				if qh == 0 && p.Target.ConjuctionMemory["qh"] == HIGH {
-					qh = i
-					fmt.Println("qh", i)
-				}
-				if xm == 0 && p.Target.ConjuctionMemory["xm"] == HIGH {
-					xm = i
-					fmt.Println("xm", i)
-				}
-
 			}
 
 			out := LOW
-			for _, v := range p.Target.ConjuctionMemory {
+			for _, v := range p.Target.ConjunctionMemory {
 				if v == LOW {
 					out = HIGH
 					break
 				}
 			}
-
-			// fmt.Println("    memory:", p.Target.ConjuctionMemory, "output:", out)
 
 			for _, output := range p.Target.Outputs {
 				qq = append(qq, QQ{output, out})
@@ -188,12 +168,13 @@ func (m *Modules) PushButton(i int) (high, low int) {
 
 		for _, pulse := range qq {
 			module := m.Find(pulse.Name)
-			// fmt.Println(p.Target, "-", pulse.Pulse, "-", pulse.Name)
+
 			if pulse.Pulse == HIGH {
 				high++
 			} else {
 				low++
 			}
+
 			if module != nil {
 				queue = append(queue, Entry{module, p.Target, pulse.Pulse})
 			}
@@ -213,9 +194,27 @@ func partOne(input string) (ret int) {
 		high += h
 		low += l
 	}
-	fmt.Println(high, low)
 
 	return high * low
+}
+
+func gcd(a, b int) int {
+	for b != 0 {
+		t := b
+		b = a % b
+		a = t
+	}
+	return a
+}
+
+func lcm(a, b int, integers ...int) int {
+	result := a * b / gcd(a, b)
+
+	for i := 0; i < len(integers); i++ {
+		result = lcm(result, integers[i])
+	}
+
+	return result
 }
 
 // partTwo returns the answer to part one of this day's puzzle.
@@ -223,15 +222,12 @@ func partTwo(input string) (ret int) {
 	modules := parse(input)
 
 	i := 0
-	for hz == 0 || pv == 0 || qh == 0 || xm == 0 {
+	for watch["hz"] == 0 || watch["pv"] == 0 || watch["qh"] == 0 || watch["xm"] == 0 {
 		i += 1
 		modules.PushButton(i)
-		if i > 10000 {
-			break
-		}
 	}
 
-	return hz * pv * qh * xm
+	return lcm(watch["hz"], watch["pv"], watch["qh"], watch["xm"])
 }
 
 func main() {

@@ -106,7 +106,7 @@ After that it was easy but finicky. Missed some pulses, inverted conjunction mem
 
 For second part went the brute force way. Did not work. 
 
-Looking at the input, `rx` gets its input from a conjuction module `kh`, which has four inputs - `pv`, `qh`, `xm` and `hz`. All of them have to be HIGH for `rx` to receive LOW. All of them get high pulses on a regular basis, so this is a LCM problem.
+Looking at the input, `rx` gets its input from a conjunction module `kh`, which has four inputs - `pv`, `qh`, `xm` and `hz`. All of them have to be HIGH for `rx` to receive LOW. All of them get high pulses on a regular basis, so this is a LCM problem.
 
 ## Day 21
 
