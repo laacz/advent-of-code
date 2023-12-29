@@ -139,7 +139,20 @@ It immediately became clear that Blocks "F" and "B" are overlapping. Fixed algo,
 
 When came the second part, I refactored everything to accomodate new requirements. Wanted to go recursive way, but finally used original `Drop` function to test if any other blocks would fall, when one has been removed.
 
-Overall this took some time and was not easy at all. Good thing - refactored approach was much faster than theoriginal :)
+Overall this took some time and was not easy at all. Good thing - refactored approach was much faster than the original :)
 
+## Day 23
 
+This year's days after 19th are brutal. Last year it gave me a bit of anxiety already. This year the levels of it are insane.
 
+Part one was trivial - basic algebra. 
+
+Part two is some outer world level of shit. First assumption was that I do not need to solve this for each and every hailstone, but only a subset. As my algebra is not as sharp as it was 27 years ago, this was a challenge.
+
+This was by far the hardest one. Because it involved knowing specific stuff about linear algebra, matrixes, etc. Coding skills or ability to think of a codable solution for a problem was not the main criteria for success here...
+
+Nevertheless. After much deliberation on paper it started resembling a linear equation system with 4 unknowns in each. Then I peaked at the solutions, got reminded about Gaussian elimination from mentioned 27 years ago. Got the tests to pass.
+
+![Some manual math](https://raw.githubusercontent.com/laacz/advent-of-code/main/2023/day23/paper.jpg?raw=true)
+
+Main input does not. Too low. After an unspecified amount of debuuging the culprit was found - `int(x + y + z)` instead of `math.Round(x + y + z)`. Idiot.
