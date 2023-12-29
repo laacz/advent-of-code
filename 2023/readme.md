@@ -161,6 +161,6 @@ Main input does not. Too low. After an unspecified amount of debuuging the culpr
 
 F*** that sh***.
 
-Just generated a [graphviz file](https://github.com/laacz/advent-of-code/tree/main/2023/day25/graph.dot), then an SVG, embeddet it within [HTML file](https://github.com/laacz/advent-of-code/tree/main/2023/day26/graph.html), added some coloring to visually know which wire I'm clicking, amn onclick event handler to output edge metadata to the console, clicked on the three distinct cuttable wires and done. 
+Just generated a [graphviz file](https://github.com/laacz/advent-of-code/tree/main/2023/day25/graph.dot), then an SVG, embeddet it within [HTML file](https://github.com/laacz/advent-of-code/tree/main/2023/day25/graph.html), added some coloring to visually know which wire I'm clicking, amn onclick event handler to output edge metadata to the console, clicked on the three distinct cuttable wires and done. 
 
 `tpn--gxv`, `zcj--rtt` and `hxq--txl`. Then just ignored them when adding to a graph. Then took first cut nodes, and searched for paths to every other node to count node groups.
