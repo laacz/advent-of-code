@@ -6,6 +6,12 @@ Continuing in Go. However, doing this without the use of any code assistant. Wil
 
 Note to self. I actually do not have much time this year to dedicate to this. That's the reason I'm going with a familiar language. Nevertheless - I suspect this will go on long after the actual event is over.
 
+## Recap
+
+Well, this was harder than previous years. This time there were many days for which I had to bash my head against my membrane keyboard in search for solution for several actual days in a row. Well, some of those days could better be characterized as being an Advent of Math.
+
+This gave me great joy at the beginning, huge anxiety after day 19 up until now (for 22 days in a row), and a huge relief when I got all the stars on the 1st of January in the year 2024.
+
 ```bash
 for folder in $(find ./ -name 'day*' -type d); do cd $folder && go test && go run . && cd ..; done
 ```
@@ -151,7 +157,13 @@ Overall this took some time and was not easy at all. Good thing - refactored app
 
 ## Day 23
 
-WIP
+This day was left last for me. 
+
+Simple DFS, which took me a while to debug all weird edge cases I introduced myself. 
+
+With part 2 it became clear, that full graph's DFS won't work (too large of a graph) and implemented graph contraction (sequential vertices form in fact one edge), which necessitated a small refactoring from my unweighted graph to a weighted one.
+
+And that, my friends, conclude Advent of Code 2023.
 
 ## Day 24
 
