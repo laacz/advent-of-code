@@ -17,6 +17,7 @@ func GetLines(input string) (ret []string) {
 		if line == "" {
 			continue
 		}
+		ret = append(ret, line)
 	}
 
 	return ret
