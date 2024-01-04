@@ -38,3 +38,32 @@ func Abs(x int) int {
 	}
 	return x
 }
+
+// Number is a numeric type that can be compared
+type Number interface {
+	int | float64
+}
+
+// Min returns the smallest of the given numbers
+func Min[T Number](a ...T) T {
+	b := a[0]
+	for _, v := range a[1:] {
+		if v < b {
+			b = v
+		}
+	}
+
+	return b
+}
+
+// Max returns the largest of the given numbers
+func Max[T Number](a ...T) T {
+	b := a[0]
+	for _, v := range a[1:] {
+		if v > b {
+			b = v
+		}
+	}
+
+	return b
+}
