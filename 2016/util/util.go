@@ -1,6 +1,8 @@
 package util
 
 import (
+	"crypto/md5"
+	"encoding/hex"
 	"os"
 	"strconv"
 	"strings"
@@ -66,4 +68,10 @@ func Max[T Number](a ...T) T {
 	}
 
 	return b
+}
+
+// Md5 returns the hex representation of a MD5 checksum of the given string
+func Md5(s string) string {
+	h := md5.Sum([]byte(s))
+	return hex.EncodeToString(h[:])
 }
