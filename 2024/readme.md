@@ -25,3 +25,7 @@ do
     cd ..
 done
 ```
+
+## Day 1
+
+Nothing of note.
