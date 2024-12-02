@@ -66,11 +66,11 @@ func main() {
 	data, _ := os.ReadFile("input.txt")
 	lines := strings.Split(string(data), "\n")
 	for _, line := range lines {
+		if len(line) == 0 {
+			continue
+		}
 		var list []int
 		for _, num := range strings.Fields(line) {
-			if len(line) == 0 {
-				continue
-			}
 			n, _ := strconv.Atoi(num)
 			list = append(list, n)
 		}
