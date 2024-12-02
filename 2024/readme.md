@@ -32,4 +32,4 @@ Nothing of note.
 
 ## Day 2
 
-Part 2 took a bit longer than I expected. Same off-by-one errors. And TIL that slice expressions `slice[:]` will never fail. Even if index or length is out of bounds.
+Part 2 took a bit longer than I expected. Same off-by-one errors.
