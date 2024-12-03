@@ -33,3 +33,7 @@ Nothing of note.
 ## Day 2
 
 Part 2 took a bit longer than I expected. Same off-by-one errors.
+
+## Day 3 
+
+Parsers and state machines on day3. That's anew.
