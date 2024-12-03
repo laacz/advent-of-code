@@ -36,4 +36,4 @@ Part 2 took a bit longer than I expected. Same off-by-one errors.
 
 ## Day 3 
 
-Parsers and state machines on day3. That's anew.
+Parsers and state machines on day3. That's anew. Went non-regex, as I wanted it to be clean and avoid full rewrite for part 2. It appears that regexes would have worked.
