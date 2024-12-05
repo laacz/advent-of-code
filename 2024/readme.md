@@ -43,3 +43,7 @@ Parsers and state machines on day3. That's anew. Went non-regex, as I wanted it 
 Didn't bother searching for the best algorithm. Just brute forced it. Easy peasy. Might look at possible optimizations later.
 
 _Update_. Looked at possible optimizations later that day. Just abstracted stuff away, wrote some tests. Now I'm a bit more content with myself. Bruteforce still...
+
+## Day 5
+
+Easy. Just a bit of sorting. 
