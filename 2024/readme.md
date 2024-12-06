@@ -46,10 +46,12 @@ _Update_. Looked at possible optimizations later that day. Just abstracted stuff
 
 ## Day 5
 
-Easy. Just a bit of sorting. 
+Easy. Just a bit of sorting.
 
 ## Day 6
 
-Part one was a simple robot implementation. However, part to took some thinking regarding an optimal obstacle placement and loop detection. For placement - on a path. For loop detection - same wall hit in same direction was optimal enough. 
+Part one was a simple robot implementation. However, part to took some thinking regarding an optimal obstacle placement and loop detection. For placement - on a path. For loop detection - same wall hit in same direction was optimal enough.
 
 Bruteforce works (7s on my i7, 6s on m2). One probable optimization might be working only with turns.
+
+_Update_. Just routinely threw it all into goroutines. Twice as fast.
