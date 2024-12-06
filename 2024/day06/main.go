@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"os"
+	"runtime"
 	"slices"
 	"strings"
 )
@@ -105,27 +106,41 @@ func part1(input string) int {
 }
 
 func part2(input string) int {
-	var ret int
 	m := parseInput(input)
 	m.Walk()
-	positions := make(map[XY]bool)
+
+	positions := make([]XY, 0)
 	for xy, c := range m.cells {
 		if c == 'X' {
-			positions[xy] = true
+			positions = append(positions, xy)
 		}
 	}
 
-	for xy := range positions {
-		m := parseInput(input)
-		m.cells[xy] = '#'
-		if m.Walk() {
-			ret++
+	results := make(chan bool, len(positions))
+
+	numWorkers := runtime.NumCPU()
+	semaphore := make(chan struct{}, numWorkers)
+
+	for _, xy := range positions {
+		semaphore <- struct{}{}
+		go func(pos XY) {
+			defer func() { <-semaphore }()
+
+			m := parseInput(input)
+			m.cells[pos] = '#'
+			results <- m.Walk()
+		}(xy)
+	}
+
+	var count int
+	for i := 0; i < len(positions); i++ {
+		if <-results {
+			count++
 		}
 	}
 
-	return ret
+	return count
 }
-
 func main() {
 
 	input, _ := os.ReadFile("input.txt")
