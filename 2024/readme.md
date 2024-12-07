@@ -55,3 +55,7 @@ Part one was a simple robot implementation. However, part to took some thinking 
 Bruteforce works (7s on my i7, 6s on m2). One probable optimization might be working only with turns.
 
 _Update_. Just routinely threw it all into goroutines. Twice as fast.
+
+## Day 7
+
+Got lucky in part 1, as only two operations wew suspiciously similar to base 2 counting system which otherwise is known as binary. And, as expected, second part was a ternary one. Which got me thinking and debugging for good 30 minutes. 2 seconds are good enough for me.
