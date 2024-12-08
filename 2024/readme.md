@@ -59,3 +59,9 @@ _Update_. Just routinely threw it all into goroutines. Twice as fast.
 ## Day 7
 
 Got lucky in part 1, as only two operations wew suspiciously similar to base 2 counting system which otherwise is known as binary. And, as expected, second part was a ternary one. Which got me thinking and debugging for good 30 minutes. 2 seconds are good enough for me.
+
+## Day 8
+
+It was an easy basic geometry/vectors, but the accompanying text for part2 almost mislead me. Nothing especially hard about today.
+
+![Testcase visualization](https://raw.githubusercontent.com/laacz/advent-of-code/main/2024/day08/tests.png?raw=true)
