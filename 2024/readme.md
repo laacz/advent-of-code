@@ -73,3 +73,5 @@ Without a coffee cup or two, I could not understand the task at first. When I di
 On the first attempt, I was trying to be smart with intervals, etc. Overengineered a bit to a point where I had no clue what I was doing. Then tried to work with strings. It was fine, but, of course, nobody realized that there are larger indices than 255 :) Rewriting to `[]int` was a breeze.
 
 Second part took a lot more time than needed, as I am well too keen to introduce off-by-one errors.
+
+Later returned for some microoptimizations and removal of dead code parts.

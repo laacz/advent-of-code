@@ -29,37 +29,31 @@ func parseInput(input string) []int {
 }
 
 func DefragmentBlocks(input []int) []int {
-	ret := make([]int, len(input))
-	copy(ret, input)
+	ret := append([]int(nil), input...)
 
-	tail := len(ret) - 1
-	for head := range len(ret) {
-		for ret[head] != -1 {
+	head, tail := 0, len(ret)-1
+	for head < tail {
+		for head < tail && ret[head] != -1 {
 			head++
 		}
-		for ret[tail] == -1 {
+
+		for head < tail && ret[tail] == -1 {
 			tail--
 		}
-		if head >= tail {
-			break
-		}
 
-		ret[head] = ret[tail]
-		ret[tail] = -1
-		tail--
+		ret[head], ret[tail] = ret[tail], -1
 	}
 
 	return ret
 }
 
 func DefragmentFiles(input []int) []int {
-	ret := make([]int, len(input))
-	copy(ret, input)
+	ret := append([]int(nil), input...)
 
 	tail := len(ret) - 1
-	moved := make(map[int]bool)
+	clearSlice := make([]int, len(input))
 
-	for tail >= 0 {
+	for {
 		for tail >= 0 && ret[tail] == -1 {
 			tail--
 		}
@@ -78,11 +72,10 @@ func DefragmentFiles(input []int) []int {
 		}
 
 		length := tailEnd - tail + 1
-		moved[index] = true
 
 		head := 0
 		for head < tail {
-			for head < tail && ret[head] != -1 {
+			for ret[head] != -1 {
 				head++
 			}
 			if head >= tail {
@@ -90,17 +83,13 @@ func DefragmentFiles(input []int) []int {
 			}
 
 			start := head
-			for head < len(ret) && ret[head] == -1 {
+			for head < tail && ret[head] == -1 {
 				head++
 			}
 
 			if gap := head - start; gap >= length {
-				for i := range length {
-					ret[start+i] = index
-				}
-				for i := range tailEnd - tail + 1 {
-					ret[tail+i] = -1
-				}
+				copy(ret[start:], ret[tail:tailEnd+1])
+				copy(ret[tail:tailEnd+1], clearSlice[:gap])
 				break
 			}
 		}
