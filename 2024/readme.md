@@ -65,3 +65,11 @@ Got lucky in part 1, as only two operations wew suspiciously similar to base 2 c
 It was an easy basic geometry/vectors, but the accompanying text for part2 almost mislead me. Nothing especially hard about today.
 
 ![Testcase visualization](https://raw.githubusercontent.com/laacz/advent-of-code/main/2024/day08/tests.png?raw=true)
+
+## Day 9
+
+Without a coffee cup or two, I could not understand the task at first. When I did, defragmentation it was.
+
+On the first attempt, I was trying to be smart with intervals, etc. Overengineered a bit to a point where I had no clue what I was doing. Then tried to work with strings. It was fine, but, of course, nobody realized that there are larger indices than 255 :) Rewriting to `[]int` was a breeze.
+
+Second part took a lot more time than needed, as I am well too keen to introduce off-by-one errors.
