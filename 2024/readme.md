@@ -75,3 +75,7 @@ On the first attempt, I was trying to be smart with intervals, etc. Overengineer
 Second part took a lot more time than needed, as I am well too keen to introduce off-by-one errors.
 
 Later returned for some microoptimizations and removal of dead code parts.
+
+## Day 10
+
+This one was easy. Reused BFS code from tjhe previous year. First one is a list of distinct targets, second - a list of distinct paths. Then tried to polish it and forked everything up beyond the length of the undo buffer.
