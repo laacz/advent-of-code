@@ -79,3 +79,7 @@ Later returned for some microoptimizations and removal of dead code parts.
 ## Day 10
 
 This one was easy. Reused BFS code from tjhe previous year. First one is a list of distinct targets, second - a list of distinct paths. Then tried to polish it and forked everything up beyond the length of the undo buffer.
+
+## Day 11
+
+First was a brute force approach. Then had to rewrite everything. Mentioned strict order can be ignored. And we should deal with counts, not individual stones. Part2 implements hashing and that's all.
