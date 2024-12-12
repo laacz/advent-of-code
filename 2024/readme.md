@@ -83,3 +83,14 @@ This one was easy. Reused BFS code from tjhe previous year. First one is a list 
 ## Day 11
 
 First was a brute force approach. Then had to rewrite everything. Mentioned strict order can be ignored. And we should deal with counts, not individual stones. Part2 implements hashing and that's all.
+
+## Day 12
+
+This year hard problems start on day 12. Floodfill was an obvious one. Calculating perimeter was easy as well - just increment when you see an outside.
+
+Counting edges was as simple as counting corners. Just take a look at 2x2 squares. If an odd number, it's a corner. There was an edge case I spent a lot of time on. It's when the 2x2 catches two corners of the same letter. In the following example there are four plots. This threw me off for a while.
+
+```
+AB
+BA
+```
