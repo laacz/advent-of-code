@@ -88,9 +88,13 @@ First was a brute force approach. Then had to rewrite everything. Mentioned stri
 
 This year hard problems start on day 12. Floodfill was an obvious one. Calculating perimeter was easy as well - just increment when you see an outside.
 
-Counting edges was as simple as counting corners. Just take a look at 2x2 squares. If an odd number, it's a corner. There was an edge case I spent a lot of time on. It's when the 2x2 catches two corners of the same letter. In the following example there are four plots. This threw me off for a while.
+Counting edges was as simple as counting corners. Just take a look at 2x2 squares. If an odd number, it's a corner. There was an edge case I spent a lot of time on. It's when the 2x2 catches two corners of the same letter. 
+
+In the following example there are four plots. This threw me off for a while.
 
 ```
 AB
 BA
 ```
+
+A bit later optimized so it does not look at the whole map for each corner detection.

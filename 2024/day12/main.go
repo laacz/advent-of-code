@@ -52,8 +52,24 @@ func (m *Map) Floodfill(c Coord) (int, int, int) {
 		}
 	}
 
-	for x := range m.size + 1 {
-		for y := range m.size + 1 {
+	minx, miny, maxx, maxy := c[0], c[1], c[0], c[1]
+	for coord := range localVisited {
+		if coord[0] < minx {
+			minx = coord[0]
+		}
+		if coord[0] > maxx {
+			maxx = coord[0]
+		}
+		if coord[1] < miny {
+			miny = coord[1]
+		}
+		if coord[1] > maxy {
+			maxy = coord[1]
+		}
+	}
+
+	for x := minx; x <= maxx+1; x++ {
+		for y := miny; y <= maxy+1; y++ {
 			cell := []rune{
 				localVisited[Coord{x - 1, y - 1}],
 				localVisited[Coord{x, y - 1}],
