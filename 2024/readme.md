@@ -88,7 +88,7 @@ First was a brute force approach. Then had to rewrite everything. Mentioned stri
 
 This year hard problems start on day 12. Floodfill was an obvious one. Calculating perimeter was easy as well - just increment when you see an outside.
 
-Counting edges was as simple as counting corners. Just take a look at 2x2 squares. If an odd number, it's a corner. There was an edge case I spent a lot of time on. It's when the 2x2 catches two corners of the same letter. 
+Counting edges was as simple as counting corners. Just take a look at 2x2 squares. If an odd number, it's a corner. There was an edge case I spent a lot of time on. It's when the 2x2 catches two corners of the same letter.
 
 In the following example there are four plots. This threw me off for a while.
 
@@ -98,3 +98,11 @@ BA
 ```
 
 A bit later optimized so it does not look at the whole map for each corner detection.
+
+## Day 13
+
+What is it with programming tasks and algebra? Year over year I really forget more and more of the math stuff, as I do not need it in my daily life. So this was challenging.
+
+First part, of course, was bruteforce. Second got me thinking. It looked like a trivial case of solving two linear equation system for two unknowns. A bit of googling around and refreshing my knowledge regarding solving these by using determinants, and voila - first part passes all the tests.
+
+Second part did not come together, tho. Cause was that it had solutions where solutions are not positive integers. All good after accounting for that.
