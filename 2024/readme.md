@@ -106,3 +106,9 @@ What is it with programming tasks and algebra? Year over year I really forget mo
 First part, of course, was bruteforce. Second got me thinking. It looked like a trivial case of solving two linear equation system for two unknowns. A bit of googling around and refreshing my knowledge regarding solving these by using determinants, and voila - first part passes all the tests.
 
 Second part did not come together, tho. Cause was that it had solutions where solutions are not positive integers. All good after accounting for that.
+
+## Day 14
+
+Easy. For the second part I made some assumptions and was patient with bruteforce. And voila. Assumption was that the tree would have some straight horizontal lines, so it was just a matter of pattern matching. If that pattern would not consist of all ones, I'd be screwed.
+
+Afterwards made a huge optimization of string representation of the robots' state. So it's quick enough now.
