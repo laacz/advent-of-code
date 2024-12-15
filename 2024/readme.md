@@ -112,3 +112,13 @@ Second part did not come together, tho. Cause was that it had solutions where so
 Easy. For the second part I made some assumptions and was patient with bruteforce. And voila. Assumption was that the tree would have some straight horizontal lines, so it was just a matter of pattern matching. If that pattern would not consist of all ones, I'd be screwed.
 
 Afterwards made a huge optimization of string representation of the robots' state. So it's quick enough now.
+
+## Day 15
+
+Lanterfish sokoban! :) This was a true pleasure. However, it took a while.
+
+I started off with a trivial solver for part 1. Worked like a charm.
+
+For second part I took a thinking pause. Came up with an algorithm. Rushed to implement it. It was not the right one. Going up/down and increasing range to check for obstacles. Everything worked, except for the test case's 311th step. Had to come up with another approach - identify all boxes and then just move them. If at least one box is not movable, we're blocked.
+
+![Testcase visualization](https://raw.githubusercontent.com/laacz/advent-of-code/main/2024/day15/sokoban.png?raw=true)
