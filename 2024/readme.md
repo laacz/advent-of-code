@@ -122,3 +122,7 @@ I started off with a trivial solver for part 1. Worked like a charm.
 For second part I took a thinking pause. Came up with an algorithm. Rushed to implement it. It was not the right one. Going up/down and increasing range to check for obstacles. Everything worked, except for the test case's 311th step. Had to come up with another approach - identify all boxes and then just move them. If at least one box is not movable, we're blocked.
 
 ![Testcase visualization](https://raw.githubusercontent.com/laacz/advent-of-code/main/2024/day15/sokoban.png?raw=true)
+
+## Day 16
+
+Dijkstra. Composite graph, where turns should be part of the state. I. Do. Not. Like. Graphs. I got all the paths in the part1, so part2 was already solved. Oddly late in the game for the first time this year. Got a bit fancy with directions tho, but got stuck on path reconstruction, as I often do.
