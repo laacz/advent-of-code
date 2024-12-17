@@ -205,7 +205,7 @@ func part2(comp Computer) int {
 		ret <<= 3
 		for {
 			c := Computer{
-				Registers: map[rune]int{'A': int(ret), 'B': 0, 'C': 0},
+				Registers: map[rune]int{'A': ret, 'B': 0, 'C': 0},
 				Program:   comp.Program,
 			}
 			c.Run()
@@ -216,7 +216,7 @@ func part2(comp Computer) int {
 		}
 	}
 
-	return int(ret)
+	return ret
 }
 
 func main() {
