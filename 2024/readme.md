@@ -126,3 +126,9 @@ For second part I took a thinking pause. Came up with an algorithm. Rushed to im
 ## Day 16
 
 Dijkstra. Composite graph, where turns should be part of the state. I. Do. Not. Like. Graphs. I got all the paths in the part1, so part2 was already solved. Oddly late in the game for the first time this year. Got a bit fancy with directions tho, but got stuck on path reconstruction, as I often do.
+
+## Day 17
+
+Dang output. I lost half an hour generating test cases. All tests pass, submission is rejected. Then submitted a string, where output was joined with commas, as stated in the task...
+
+For the second part I had to abort bruteforcing and look for hints. `<<3` was enough. These types of tasks are not my forte. Or even my normale.
