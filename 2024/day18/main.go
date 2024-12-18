@@ -63,10 +63,6 @@ func (pq *PriorityQueue) Pop() interface{} {
 	return state
 }
 
-func stateKey(p Coord) string {
-	return fmt.Sprintf("%d,%d,%d", p.x, p.y)
-}
-
 func parseInput(input string, size int, limit int) (Maze, []Coord) {
 	var maze Maze
 	var bytes []Coord
