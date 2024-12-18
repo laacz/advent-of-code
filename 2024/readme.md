@@ -132,3 +132,7 @@ Dijkstra. Composite graph, where turns should be part of the state. I. Do. Not. 
 Dang output. I lost half an hour generating test cases. All tests pass, submission is rejected. Then submitted a string, where output was joined with commas, as stated in the task...
 
 For the second part I had to abort bruteforcing and look for hints. `<<3` was enough. These types of tasks are not my forte. Or even my normale.
+
+## Day 18
+
+Same old Dijkstra. For the second part just same pathfinding until there is no path. Didn't write a single test line tho. No need.
