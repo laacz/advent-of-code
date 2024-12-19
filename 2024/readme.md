@@ -136,3 +136,7 @@ For the second part I had to abort bruteforcing and look for hints. `<<3` was en
 ## Day 18
 
 Same old Dijkstra. For the second part just same pathfinding until there is no path. Didn't write a single test line tho. No need.
+
+## Day 19
+
+First part was simple recursion until we got to one where memoization would be needed (search was taking too long). But overall - easy peasy.
