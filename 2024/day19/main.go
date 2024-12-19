@@ -19,20 +19,16 @@ func (i *Input) IsDesignPossible(design string) bool {
 	}
 
 	if len(design) == 0 {
-		fmt.Println("We're done")
 		return true
 	}
 
 	for _, p := range i.Patterns {
 		if strings.HasPrefix(design, p) {
-			fmt.Printf("matched (working with %s) %s\n", design, p)
 			if i.IsDesignPossible(design[len(p):]) {
 				return true
 			}
 		}
 	}
-
-	fmt.Printf("no match (working with %s)\n", design)
 
 	impossible[design] = true
 	return false
@@ -82,10 +78,7 @@ func part1(i Input) int {
 
 	for _, d := range i.Designs {
 		if i.IsDesignPossible(d) {
-			fmt.Println("Possible")
 			ret++
-		} else {
-			fmt.Println("Not possible")
 		}
 	}
 
