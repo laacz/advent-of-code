@@ -140,3 +140,13 @@ Same old Dijkstra. For the second part just same pathfinding until there is no p
 ## Day 19
 
 First part was simple recursion until we got to one where memoization would be needed (search was taking too long). But overall - easy peasy.
+
+## Day 20
+
+Solution was trivial, but I managed to fuck it all up. Assumption - there's ony single path from start to end. Which held for test case. But did not for the actual input. Rewrote it using Dijkstra to find the shortest path. It still did pass the tests, but no joy with the actual input. 
+
+Approach - build a map of distances, and then cut to the +/-2 and check if it's a shortcut by subtracting new distance from the current one.
+
+And only after 20 minutes or so it came to me. Shaving must be at least 100 ps, not at most 100 ps. My tendency to rush and miss stuff got me there.
+
+Second part built on top of the first one. Did not notice a bug for a while, where I did not take into account actual distance cost when comparing to a cheat gains. 
