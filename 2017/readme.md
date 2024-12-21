@@ -11,3 +11,7 @@ Easy. Remember to trim the input...
 ## Day 02
 
 Easy as well.
+
+## Day 03
+
+Took out my paper and pen to do proper maths.
