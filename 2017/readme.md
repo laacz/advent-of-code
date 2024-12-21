@@ -15,3 +15,7 @@ Easy as well.
 ## Day 03
 
 Took out my paper and pen to do proper maths.
+
+## Day 04
+
+Somehow misread anagrams as palindromes.
