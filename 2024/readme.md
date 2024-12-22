@@ -154,3 +154,13 @@ Second part built on top of the first one. Did not notice a bug for a while, whe
 ## Day 21
 
 Brutal. This was brutal one. I would never want to do this again.
+
+## Day 22
+
+This day's legend was hard to understand.
+
+After getting past that first part was trivial - just bruteforce - generate and sum 2000th numbers.
+
+Second part - generate prices and differences, use a sliding window to get 4 consecutive changes. Sum prices for each sequence found within buyer's secret numbers.
+
+Don't forget to quit after finding the first one. That would shave off some time debugging.
