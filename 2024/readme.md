@@ -164,3 +164,7 @@ After getting past that first part was trivial - just bruteforce - generate and 
 Second part - generate prices and differences, use a sliding window to get 4 consecutive changes. Sum prices for each sequence found within buyer's secret numbers.
 
 Don't forget to quit after finding the first one. That would shave off some time debugging.
+
+## Day 23
+
+Part 2 not fun at all. TIL about Bron-Kerbosch algorithm. Not sure it was pleasant.
