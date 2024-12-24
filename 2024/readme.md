@@ -168,3 +168,7 @@ Don't forget to quit after finding the first one. That would shave off some time
 ## Day 23
 
 Part 2 not fun at all. TIL about Bron-Kerbosch algorithm. Not sure it was pleasant.
+
+## Day 24
+
+Part 1 easy and done, part 2 later this evening or tomorrow. It's xmas prep.
