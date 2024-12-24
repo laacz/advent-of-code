@@ -34,7 +34,6 @@ func (d Device) String() string {
 		ret += fmt.Sprintf("%d", d.io[k])
 	}
 
-	// reverse
 	runes := []rune(ret)
 	for i, j := 0, len(runes)-1; i < j; i, j = i+1, j-1 {
 		runes[i], runes[j] = runes[j], runes[i]
