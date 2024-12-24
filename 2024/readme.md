@@ -172,3 +172,5 @@ Part 2 not fun at all. TIL about Bron-Kerbosch algorithm. Not sure it was pleasa
 ## Day 24
 
 Part 1 easy and done, part 2 later this evening or tomorrow. It's xmas prep.
+
+Fuck that shit. It's well past the midnight and I'm done. Paper, hints, graphviz, mermaid and then just that tiny sall solution.

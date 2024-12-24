@@ -78,10 +78,3 @@ tnw OR pbm -> gnj`,
 		}
 	}
 }
-
-// func TestPartTwo(t *testing.T) {
-// 	expected := "co,de,ka,ta"
-// 	if actual := part2(parseInput(input)); actual != expected {
-// 		t.Errorf("expected %v but got %v", expected, actual)
-// 	}
-// }

@@ -19,27 +19,22 @@ type Device struct {
 	program []Gate
 }
 
-func (d Device) String() string {
+func (d Device) String(prefix rune) string {
 	var ret string
 
 	keys := make([]string, 0, len(d.io))
 	for k := range d.io {
-		if k[0] != 'z' {
+		if k[0] != byte(prefix) {
 			continue
 		}
 		keys = append(keys, k)
 	}
 	sort.Strings(keys)
-	for _, k := range keys {
-		ret += fmt.Sprintf("%d", d.io[k])
+	for i := range len(keys) {
+		ret += fmt.Sprintf("%d", d.io[keys[len(keys)-i-1]])
 	}
 
-	runes := []rune(ret)
-	for i, j := 0, len(runes)-1; i < j; i, j = i+1, j-1 {
-		runes[i], runes[j] = runes[j], runes[i]
-	}
-
-	return string(runes)
+	return ret
 }
 
 func (d *Device) Simulate() bool {
@@ -88,6 +83,9 @@ func parseInput(input string) Device {
 
 	for _, values := range strings.Split(parts[1], "\n") {
 		parts := strings.Split(values, " ")
+		if parts[0] > parts[2] {
+			parts[0], parts[2] = parts[2], parts[0]
+		}
 		ret.program = append(ret.program, Gate{
 			inputs:    [2]string{parts[0], parts[2]},
 			output:    parts[4],
@@ -98,18 +96,79 @@ func parseInput(input string) Device {
 	return ret
 }
 
+func (d *Device) IsGateUsed(gate, operation string) bool {
+	for _, g := range d.program {
+		if g.operation == operation &&
+			(g.inputs[0] == gate || g.inputs[1] == gate) {
+			return true
+		}
+	}
+	return false
+}
+
+func (d *Device) FindAndFix() []string {
+	var answer []string
+
+	for _, gate := range d.program {
+		if gate.operation == "AND" &&
+			gate.inputs[0][0] == 'x' &&
+			gate.inputs[1][0] == 'y' &&
+			gate.output[0] == 'z' &&
+			gate.output != "z00" {
+			answer = append(answer, gate.output)
+			continue
+		}
+
+		if gate.operation == "XOR" &&
+			gate.inputs[0][0] != 'x' &&
+			gate.inputs[1][0] != 'y' &&
+			gate.output[0] != 'z' {
+			answer = append(answer, gate.output)
+			continue
+		}
+
+		if gate.output[0] == 'z' &&
+			gate.operation != "XOR" &&
+			gate.output != "z45" {
+			answer = append(answer, gate.output)
+			continue
+		}
+
+		if gate.operation == "AND" &&
+			gate.inputs[0][0] == 'x' &&
+			gate.inputs[1][0] == 'y' &&
+			gate.inputs[0] != "x00" {
+			if !d.IsGateUsed(gate.output, "OR") {
+				answer = append(answer, gate.output)
+				continue
+			}
+		}
+
+		if gate.operation == "XOR" &&
+			gate.inputs[0][0] == 'x' &&
+			gate.inputs[1][0] == 'y' &&
+			gate.inputs[0] != "x00" {
+			if !d.IsGateUsed(gate.output, "AND") {
+				answer = append(answer, gate.output)
+			}
+		}
+	}
+
+	sort.Strings(answer)
+	return answer
+}
+
 func part1(d Device) int {
 	for d.Simulate() {
 	}
 
-	state := d.String()
+	state := d.String('z')
 	ret, _ := strconv.ParseInt(state, 2, 64)
 	return int(ret)
 }
 
-func part2(d Device) int {
-	var ret int
-	return ret
+func part2(d Device) string {
+	return strings.Join(d.FindAndFix(), ",")
 }
 
 func main() {
