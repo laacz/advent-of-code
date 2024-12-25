@@ -26,6 +26,12 @@ do
 done
 ```
 
+## Retro after 50\*
+
+This year was not that much harder than previous. Maybe I'm just getting better? One could hope. Struggles were real, tho. Next year let's ease the game and try this with LLMs allowed. Not for posting assignments and trying to get out working code, but just as an assistant.
+
+As per ususal - I still hate tasks I am not good at. Advent of Math aspect of this is not likey likey. Otherwise this has become a nice tradition. Let's now work towards reducing the anxiety.
+
 ## Day 1
 
 Nothing of note.
@@ -174,3 +180,7 @@ Part 2 not fun at all. TIL about Bron-Kerbosch algorithm. Not sure it was pleasa
 Part 1 easy and done, part 2 later this evening or tomorrow. It's xmas prep.
 
 Fuck that shit. It's well past the midnight and I'm done. Paper, hints, graphviz, mermaid and then just that tiny sall solution.
+
+## Day 25
+
+Straightforward, but somehow I spent too much time writing a parser. This concludes AoC 2024.
