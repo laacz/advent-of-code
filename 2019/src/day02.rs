@@ -10,7 +10,8 @@ fn read_file_ints_comma(filename: &str) -> Vec<i32> {
     std::fs::read_to_string(filename)
         .expect("Failed to read file")
         .lines()
-        .next().unwrap()
+        .next()
+        .unwrap()
         .split(',')
         .map(|line| line.parse().expect("Failed to parse line"))
         .collect()
@@ -28,13 +29,13 @@ fn run_program(ints: &[i32]) -> i32 {
                 let b = program[pos + 2] as usize;
                 let c = program[pos + 3] as usize;
                 program[c] = program[a] + program[b];
-            },
+            }
             2 => {
                 let a = program[pos + 1] as usize;
                 let b = program[pos + 2] as usize;
                 let c = program[pos + 3] as usize;
                 program[c] = program[a] * program[b];
-            },
+            }
             99 => break,
             _ => panic!("Invalid opcode"),
         }
