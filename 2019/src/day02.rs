@@ -1,5 +1,4 @@
 fn main() {
-    println!("Hello, world!");
     let mut ints: Vec<i32> = read_file_ints_comma("data/02.txt");
     ints[1] = 12;
     ints[2] = 2;
@@ -17,8 +16,8 @@ fn read_file_ints_comma(filename: &str) -> Vec<i32> {
         .collect()
 }
 
-fn run_program(ints: &Vec<i32>) -> i32 {
-    let mut program = ints.clone();
+fn run_program(ints: &[i32]) -> i32 {
+    let mut program = ints.to_owned();
     let mut pos = 0;
 
     while pos < program.len() {
@@ -44,14 +43,14 @@ fn run_program(ints: &Vec<i32>) -> i32 {
     program[0]
 }
 
-fn part1(ints: &Vec<i32>) -> i32 {
+fn part1(ints: &[i32]) -> i32 {
     run_program(ints)
 }
 
-fn part2(ints: &Vec<i32>) -> i32 {
+fn part2(ints: &[i32]) -> i32 {
     for noun in 0..100 {
         for verb in 0..100 {
-            let mut program = ints.clone();
+            let mut program = ints.to_owned();
             program[1] = noun;
             program[2] = verb;
             if run_program(&program) == 19690720 {

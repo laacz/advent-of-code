@@ -1,5 +1,4 @@
 fn main() {
-    println!("Hello, world!");
     let masses: Vec<i32> = read_file_ints("data/01.txt");
     println!("part1: {}", part1(&masses));
     println!("part2: {}", part2(&masses));
@@ -13,11 +12,11 @@ fn read_file_ints(filename: &str) -> Vec<i32> {
         .collect()
 }
 
-fn part1(masses: &Vec<i32>) -> i32 {
+fn part1(masses: &[i32]) -> i32 {
     masses.iter().map(|mass| mass / 3 - 2).sum()
 }
 
-fn part2(masses: &Vec<i32>) -> i32 {
+fn part2(masses: &[i32]) -> i32 {
     masses.iter().map(|mass| fuel_for_mass(*mass)).sum()
 }
 
