@@ -4,17 +4,21 @@ version = "0.1.0"
 edition = "2024"
 
 [[bin]]
-name = "day01"
+name = "1"
 path = "src/day01.rs"
 
 [[bin]]
-name = "day02"
+name = "2"
 path = "src/day02.rs"
 
 [[bin]]
-name = "day03"
+name = "3"
 path = "src/day03.rs"
 
 [[bin]]
-name = "day04"
+name = "4"
 path = "src/day04.rs"
+
+[[bin]]
+name = "5"
+path = "src/day05.rs"
