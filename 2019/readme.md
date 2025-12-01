@@ -10,4 +10,6 @@ Easy enough.
 
 ## Day 06
 
-Struggled a bit. Mainly due the unfamiliarity with Rust. Somehow it takes a longer while to translate my thinking into Rust than into Go, for example.
+First part was easy enough. Got lost with actual Rust implementation tho.
+
+Struggled a bit more with the second part. Mainly due the unfamiliarity with Rust. Somehow it takes a longer while to translate my thinking into Rust than into Go, for example.
