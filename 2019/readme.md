@@ -25,3 +25,7 @@ A compensation for day 07 probably.
 ## Day 09
 
 That damned Intcode computer again. To make my life even harder, decided to implement it as a type. I dislike these large programs as AoC solutions. Part 2 was a nice surprise for the late night.
+
+## Day 10
+
+Task was simple, implementation not. Still getting used to the ways of Rust. Regarding solution - the formulas are not living in my head, so looked them up. Without web search I wouldn't be able to code anything beyond simple straightforward stuff.

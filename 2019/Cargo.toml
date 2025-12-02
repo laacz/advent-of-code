@@ -4,37 +4,41 @@ version = "0.1.0"
 edition = "2024"
 
 [[bin]]
-name = "1"
+name = "day01"
 path = "src/day01.rs"
 
 [[bin]]
-name = "2"
+name = "day02"
 path = "src/day02.rs"
 
 [[bin]]
-name = "3"
+name = "day03"
 path = "src/day03.rs"
 
 [[bin]]
-name = "4"
+name = "day04"
 path = "src/day04.rs"
 
 [[bin]]
-name = "5"
+name = "day05"
 path = "src/day05.rs"
 
 [[bin]]
-name = "6"
+name = "day06"
 path = "src/day06.rs"
 
 [[bin]]
-name = "7"
+name = "day07"
 path = "src/day07.rs"
 
 [[bin]]
-name = "8"
+name = "day08"
 path = "src/day08.rs"
 
 [[bin]]
-name = "9"
+name = "day09"
 path = "src/day09.rs"
+
+[[bin]]
+name = "day10"
+path = "src/day10.rs"
