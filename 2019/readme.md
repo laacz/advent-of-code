@@ -22,3 +22,6 @@ This. Just. Sucked.
 
 A compensation for day 07 probably.
 
+## Day 09
+
+That damned Intcode computer again. To make my life even harder, decided to implement it as a type. I dislike these large programs as AoC solutions. Part 2 was a nice surprise for the late night.
