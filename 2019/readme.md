@@ -18,3 +18,7 @@ Struggled a bit more with the second part. Mainly due the unfamiliarity with Rus
 
 This. Just. Sucked.
 
+## Day 08
+
+A compensation for day 07 probably.
+
