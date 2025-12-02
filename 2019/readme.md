@@ -29,3 +29,9 @@ That damned Intcode computer again. To make my life even harder, decided to impl
 ## Day 10
 
 Task was simple, implementation not. Still getting used to the ways of Rust. Regarding solution - the formulas are not living in my head, so looked them up. Without web search I wouldn't be able to code anything beyond simple straightforward stuff.
+
+## Day 11
+
+Once more that damned Intcode computer. Nevertheless - look how pretty! Yeah, procrastinated a bit :)
+
+![HSV rainbow!](https://raw.githubusercontent.com/laacz/advent-of-code/main/2019/day11.png?raw=true)
