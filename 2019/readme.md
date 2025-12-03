@@ -39,3 +39,7 @@ Once more that damned Intcode computer. Nevertheless - look how pretty! Yeah, pr
 ## Day 12
 
 So much to write. Small errors, off-by-ones, off-by-13322932's, moon-affects-itself features. This time around I learned and remembered few more things about Rust. Like `iter_mut()`, init and fill a vec,
+
+## Day 13
+
+Easy with Intcode. Except for part 2. Which was not easy. Used optionals outside return values for the first time.

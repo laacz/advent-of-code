@@ -159,7 +159,6 @@ impl IntcodeComputer {
         }
         None
     }
-
 }
 
 fn part1(program: &Vec<i64>) -> usize {
