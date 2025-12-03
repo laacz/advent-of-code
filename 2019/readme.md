@@ -47,3 +47,9 @@ Easy with Intcode. Except for part 2. Which was not easy. Used optionals outside
 ## Day 14
 
 Here be graphs (binary trees for now).
+
+## Day 15
+
+All of my nemesis. Nemesises. Nemesi. Wait, googling. ... Back with nemeses! They're names are BFS, DFS, Dijkstra, and more. Here they come. First part requires us to do BFS with the Intcode computer and its program. BFS guarantees that first found path is the shortest. For part 2 we to BFS on the actual generated map.
+
+![The map!](https://raw.githubusercontent.com/laacz/advent-of-code/main/2019/day15.png?raw=true)
