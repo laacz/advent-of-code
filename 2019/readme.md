@@ -43,3 +43,7 @@ So much to write. Small errors, off-by-ones, off-by-13322932's, moon-affects-its
 ## Day 13
 
 Easy with Intcode. Except for part 2. Which was not easy. Used optionals outside return values for the first time.
+
+## Day 14
+
+Here be graphs (binary trees for now).
