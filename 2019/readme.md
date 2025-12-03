@@ -35,3 +35,7 @@ Task was simple, implementation not. Still getting used to the ways of Rust. Reg
 Once more that damned Intcode computer. Nevertheless - look how pretty! Yeah, procrastinated a bit :)
 
 ![HSV rainbow!](https://raw.githubusercontent.com/laacz/advent-of-code/main/2019/day11.png?raw=true)
+
+## Day 12
+
+So much to write. Small errors, off-by-ones, off-by-13322932's, moon-affects-itself features. This time around I learned and remembered few more things about Rust. Like `iter_mut()`, init and fill a vec,
