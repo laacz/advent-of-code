@@ -10,4 +10,8 @@ Could not figure out math for part 2 with left rotations. Ended up brute forcing
 
 ## Day 2
 
-Already a challange. Part 1 looks clean, but because I cleaned up some 50 lines of spaghetti or so. For part 2 did brute force, as input did not give extreme ranges.
+Already a challenge. Part 1 looks clean, but because I cleaned up some 50 lines of spaghetti or so. For part 2 did brute force, as input did not give extreme ranges.
+
+## Day 3
+
+This was so neat. Part 1 was simple. In part 2 we had to think about algorithmic approach of finding max in a given window, noting its position, doing that 12 times.
