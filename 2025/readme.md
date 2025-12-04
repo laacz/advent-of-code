@@ -15,3 +15,9 @@ Already a challenge. Part 1 looks clean, but because I cleaned up some 50 lines 
 ## Day 3
 
 This was so neat. Part 1 was simple. In part 2 we had to think about algorithmic approach of finding max in a given window, noting its position, doing that 12 times.
+
+## Day 4
+
+Nice and simple. 
+
+![Final test case state](https://raw.githubusercontent.com/laacz/advent-of-code/main/2025/day04.png?raw=true)
