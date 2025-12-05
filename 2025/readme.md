@@ -21,3 +21,7 @@ This was so neat. Part 1 was simple. In part 2 we had to think about algorithmic
 Nice and simple. 
 
 ![Final test case state](https://raw.githubusercontent.com/laacz/advent-of-code/main/2025/day04.png?raw=true)
+
+## Day 5
+
+First part - meh. Second part came easy after I figured out that intervals need to be sorted first.
