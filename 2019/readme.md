@@ -53,3 +53,7 @@ Here be graphs (binary trees for now).
 All of my nemesis. Nemesises. Nemesi. Wait, googling. ... Back with nemeses! Their names are BFS, DFS, Dijkstra, and more. Here they come. First part requires us to do BFS with the Intcode computer and its program. BFS guarantees that first found path is the shortest. For part 2 we to BFS on the actual generated map.
 
 ![The map!](https://raw.githubusercontent.com/laacz/advent-of-code/main/2019/day15.png?raw=true)
+
+## Day 16
+
+For the second part I went for help. Help was not very helpful tbh. Re-read the insight, asked an LLM to ELIH (explain like i'm hungover). Then off to the races.
