@@ -57,3 +57,7 @@ All of my nemesis. Nemesises. Nemesi. Wait, googling. ... Back with nemeses! The
 ## Day 16
 
 For the second part I went for help. Help was not very helpful tbh. Re-read the insight, asked an LLM to ELIH (explain like i'm hungover). Then off to the races.
+
+## Day 17
+
+This was brutal. No BFS on Dijkstra (yet to come, eh?), but still.
