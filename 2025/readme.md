@@ -18,10 +18,14 @@ This was so neat. Part 1 was simple. In part 2 we had to think about algorithmic
 
 ## Day 4
 
-Nice and simple. 
+Nice and simple.
 
 ![Final test case state](https://raw.githubusercontent.com/laacz/advent-of-code/main/2025/day04.png?raw=true)
 
 ## Day 5
 
 First part - meh. Second part came easy after I figured out that intervals need to be sorted first.
+
+## Day 6
+
+There's always one where parsing is harder than computing. For second part parser had to be rewritten, part1 solution got adjusted. Yes, it's suboptimal. I might return and implement better logic (parse once, use more idiomatic rust, etc).
