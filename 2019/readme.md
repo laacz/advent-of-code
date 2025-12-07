@@ -61,3 +61,9 @@ For the second part I went for help. Help was not very helpful tbh. Re-read the 
 ## Day 17
 
 This was brutal. No BFS on Dijkstra (yet to come, eh?), but still.
+
+## Day 18
+
+Simple BFS at first. State - position and keys collected. Well, not simple, as you can't go though doors you don't have keys for.
+
+Second part took a while to figure out. Blind BFS was too huge, so converted to a distance graph instead of movement graph. This was hard. I doubt that my spahetti is optimal.
