@@ -29,3 +29,7 @@ First part - meh. Second part came easy after I figured out that intervals need 
 ## Day 6
 
 There's always one where parsing is harder than computing. For second part parser had to be rewritten, part1 solution got adjusted. Yes, it's suboptimal. I might return and implement better logic (parse once, use more idiomatic rust, etc).
+
+## Day 7
+
+Nice one. For part two just multiply by two each time a split occurs, but count universes, not beams (two beams can occupy one spot and hit one splitter).
