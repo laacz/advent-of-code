@@ -91,3 +91,7 @@ Part1 was deceptively simple. And part2 was not intuitive. More Eulerish than I 
 ## Day 23
 
 Took a lot of time to figure out how to operate the Intcode computer for the part1. Even longer for the part 2.
+
+## Day 24
+
+Tried to be fancy with bitmasks et al. But part two... let's say it was very interesting and time consuming plot twist :) Not in terms of the problem, but in terms of converting its solution to code. But wasn't that bad, as this time I understood what to do by myself.
