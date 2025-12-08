@@ -87,3 +87,7 @@ Inception or meta programming. Dunno which. Part 2 was NOT simple.
 ## Day 22
 
 Part1 was deceptively simple. And part2 was not intuitive. More Eulerish than I could take. Got to formula myself, but could not figure out final position and shift. Helper functions simplfied code a lot tbh.
+
+## Day 23
+
+Took a lot of time to figure out how to operate the Intcode computer for the part1. Even longer for the part 2.
