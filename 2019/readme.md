@@ -79,3 +79,7 @@ This is SO MUCH HARDER than I remember from 2021 up to 2024 (I'm doing 2019 in 2
 For part 1 parsing was the most extreme I've ever encountered within AoC. After several attempts just implemented _Maze_ struct. Then it was simple BFS.
 
 Part 2 was not immediately clear to me. The task I mean. And parsing was once again extreme. Then I show myself into all fots with incorrect BFS implementation and bad choice of key.
+
+## Day 21
+
+Inception or meta programming. Dunno which. Part 2 was NOT simple.
