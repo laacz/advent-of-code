@@ -33,3 +33,7 @@ There's always one where parsing is harder than computing. For second part parse
 ## Day 7
 
 Nice one. For part two just multiply by two each time a split occurs, but count universes, not beams (two beams can occupy one spot and hit one splitter).
+
+## Day 8
+
+Today I learned about Unions.
