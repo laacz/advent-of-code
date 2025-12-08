@@ -83,3 +83,7 @@ Part 2 was not immediately clear to me. The task I mean. And parsing was once ag
 ## Day 21
 
 Inception or meta programming. Dunno which. Part 2 was NOT simple.
+
+## Day 22
+
+Part1 was deceptively simple. And part2 was not intuitive. More Eulerish than I could take. Got to formula myself, but could not figure out final position and shift. Helper functions simplfied code a lot tbh.
