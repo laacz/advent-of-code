@@ -71,3 +71,11 @@ Second part took a while to figure out. Blind BFS was too huge, so converted to 
 ## Day 19
 
 Part 1 - trivial. Part 2 trivial as well. It was a bit sus at first. We just need to check if square's corners fit.
+
+## Day 20
+
+This is SO MUCH HARDER than I remember from 2021 up to 2024 (I'm doing 2019 in 2025). Now I remember why I love and hate AoC.
+
+For part 1 parsing was the most extreme I've ever encountered within AoC. After several attempts just implemented _Maze_ struct. Then it was simple BFS.
+
+Part 2 was not immediately clear to me. The task I mean. And parsing was once again extreme. Then I show myself into all fots with incorrect BFS implementation and bad choice of key.
