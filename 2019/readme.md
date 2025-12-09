@@ -95,3 +95,11 @@ Took a lot of time to figure out how to operate the Intcode computer for the par
 ## Day 24
 
 Tried to be fancy with bitmasks et al. But part two... let's say it was very interesting and time consuming plot twist :) Not in terms of the problem, but in terms of converting its solution to code. But wasn't that bad, as this time I understood what to do by myself.
+
+## Day 25
+
+Made the choice of playing the game in an assisted manner (`cargo run --bin day25 -- -i`). Did not succeed, but made a list of lethal objects. Also mapped the ship on paper. To my surprise, it was not a simple 2D map, but a graph.
+
+There was a bug in my thinking, since I did not imply out that you can avoid dying by carrying a specific item. First I thought there's no room. But there is. Very much so.
+
+DFS for exploration and picking up safe objects. Then bruteforce for non-lethal items to match the weight.
