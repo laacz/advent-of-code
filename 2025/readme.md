@@ -43,3 +43,13 @@ Today I learned about Unions.
 This was a sexy task. For part 2 I first went for naive approach. It did not work out :) After looking at input cardinality, just compressed it by sorting individual coords, and using their indices. After that was a simple flood fill and then brute.\
 
 ![My grid](https://raw.githubusercontent.com/laacz/advent-of-code/main/2025/day09.png?raw=true)
+
+## Day 10
+
+Could not do part2 without hints.
+
+Part 1 was easy and worked with bruteforce.
+
+For part 2 bruteforce was not an option. I was getting nowhere with DFS as well - it was taking too long for the actual input. No optimizations of pruning strategy worked.
+
+In the end gave up and looked at The Megathread. Chose the Gaussian elimination. Then almost died implementing it in *Rust*. Solution is still slow, but there is not enough of pride left to do anything about it.
