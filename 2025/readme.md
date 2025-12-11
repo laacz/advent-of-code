@@ -53,3 +53,10 @@ Part 1 was easy and worked with bruteforce.
 For part 2 bruteforce was not an option. I was getting nowhere with DFS as well - it was taking too long for the actual input. No optimizations of pruning strategy worked.
 
 In the end gave up and looked at The Megathread. Chose the Gaussian elimination. Then almost died implementing it in *Rust*. Solution is still slow, but there is not enough of pride left to do anything about it.
+
+
+## Day 11
+
+Part 1 - easy. Simple DFS with backtracking. I misread instructions at first (find paths to `bbb`) and spent some time searching for imaginary bugs in my implementation.
+
+Part 2 had too many paths, eh? Memoization to the rescue.
