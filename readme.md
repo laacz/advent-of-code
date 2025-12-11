@@ -4,7 +4,7 @@ I don't know why each year I'm doing this to myself. It's hard, psychologically 
 
 - [2015](2015) - Done in *Go*
 - [2016](2016) - Done in *Go*
-- 2017 - Partially done, code not found, revisiting
+- [2017](2017) - Partially done, code not found, revisiting
 - 2018 - Not attempted yet
 - [2019](2019) - Done in *Rust*
 - [2020](2020) - Done in *Go* (was partially solved previously, code not found, might revisit later)
