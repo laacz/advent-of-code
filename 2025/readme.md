@@ -60,3 +60,13 @@ In the end gave up and looked at The Megathread. Chose the Gaussian elimination.
 Part 1 - easy. Simple DFS with backtracking. I misread instructions at first (find paths to `bbb`) and spent some time searching for imaginary bugs in my implementation.
 
 Part 2 had too many paths, eh? Memoization to the rescue.
+
+## Day 12
+
+Static tetris or polyominos. This was a worthy boss level. 
+
+Parsing itself was not hard, but I went over several data structs before landing on these. Solver uses recursive backtracking. It took forever (as in - did not complete), so now it prunes early, packs tightly from the start. 
+
+Solution to the actual input did not require placing any of other orientations for the presents. Tests, however, required rotations (but no flips).
+
+![Solutions for test cases](https://raw.githubusercontent.com/laacz/advent-of-code/main/2025/day12.png?raw=true)
