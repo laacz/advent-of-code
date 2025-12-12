@@ -40,7 +40,7 @@ Today I learned about Unions.
 
 ## Day 9
 
-This was a sexy task. For part 2 I first went for naive approach. It did not work out :) After looking at input cardinality, just compressed it by sorting individual coords, and using their indices. After that was a simple flood fill and then brute.\
+This was a sexy task. For part 2 I first went for naive approach. It did not work out :) After looking at input cardinality, just compressed it by sorting individual coords, and using their indices. After that was a simple flood fill and then brute.
 
 ![My grid](https://raw.githubusercontent.com/laacz/advent-of-code/main/2025/day09.png?raw=true)
 

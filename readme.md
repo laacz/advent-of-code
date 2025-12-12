@@ -12,4 +12,4 @@ I don't know why each year I'm doing this to myself. It's hard, psychologically 
 - [2022](2022) - Done in *Go*
 - [2023](2023) - Done in *Go*
 - [2024](2024) - Done in *Go*
-- [2024](2025) - Current attempt in *Rust*
+- [2024](2025) - Done in *Rust*
