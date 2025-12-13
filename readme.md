@@ -7,7 +7,7 @@ I don't know why each year I'm doing this to myself. It's hard, psychologically 
 - [2017](2017) - Partially done, code not found, revisiting
 - 2018 - Not attempted yet
 - [2019](2019) - Done in *Rust*
-- [2020](2020) - Done in *Go* (was partially solved previously, code not found, might revisit later)
+- [2020](2020) - Done in *Go*
 - [2021](2021) - Done in *PHP*
 - [2022](2022) - Done in *Go*
 - [2023](2023) - Done in *Go*
